@@ -1,7 +1,16 @@
 ### This is only a test lib for experimentation with Angular CLI
 
+Developing a standard for 3rd party Angular 2 libraries.
+
+#### Install
+
+```
+npm install ng2-cli-test-lib
+```
+
+#### Development
+
 ```bash
-# install the repo with npm
 npm install
 
 # start the server
@@ -11,7 +20,7 @@ go to [http://localhost:3000](http://localhost:3000) in your browser
   
 ___
 
-based on **AngularClass** 
+project setup based on **AngularClass** 
 
 <br><br>
 
