@@ -1,6 +1,6 @@
 {
   "name": "ng2-cli-test-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Just a test lib to experiment with Angular CLI",
   "author": "Patrick Stapleton <patrick@angularclass.com>",
   "homepage": "https://github.com/angularclass/angular2-webpack-starter",
