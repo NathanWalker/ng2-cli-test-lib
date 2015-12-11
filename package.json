@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "main": "",
+  "typings": "./ng2-cli-test-lib.d.ts",
   "scripts": {
     "clean": "rimraf node_modules doc && npm cache clean",
     "clean-install": "npm run clean && npm install",
@@ -27,7 +28,8 @@
     "test": "karma start",
     "ci": "npm run e2e && npm run test",
     "docs": "typedoc  --options typedoc.json  src/**/*.ts",
-    "start": "npm run server"
+    "start": "npm run server",
+    "prepublish": "tsc"
   },
   "dependencies": {
     "core-js": "^1.2.6",

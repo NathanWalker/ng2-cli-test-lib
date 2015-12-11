@@ -52,3 +52,7 @@ __build__/**
 # IDE #
 .idea/
 *.swp
+
+*.js
+*.map
+*.d.ts
