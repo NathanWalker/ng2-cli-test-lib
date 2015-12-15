@@ -6,6 +6,7 @@ Thumbs.db
 .DS_Store
 
 src/public
+!src/public/css/test.css
 src/app/app.ts
 src/app/app.spec.ts
 bootstrap.ts

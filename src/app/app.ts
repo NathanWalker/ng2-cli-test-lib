@@ -1,13 +1,15 @@
-import {Component} from 'angular2/core';
+import {Component, ViewEncapsulation} from 'angular2/core';
 
 import {TestDirective} from './directives/test.directive';
 import {TestPipe} from './pipes/test.pipe';
 import {TestService, TestService2} from './services/test.service';
+import {TestStyles} from './test.styles';
 
 @Component({
   selector: 'app', 
   directives: [ TestDirective ],
   pipes: [TestPipe],
+  encapsulation: ViewEncapsulation.None,
   styles: [`
     .title {
       font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +17,10 @@ import {TestService, TestService2} from './services/test.service';
     main {
       padding: 1em;
     }
-  `],
+  `].concat(TestStyles.styles()),
+  styleUrls: [
+    'css/test.css'
+  ],
   template: `
   <header>
     <h1 class="title">Hello {{ title }}</h1>

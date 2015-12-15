@@ -1,15 +1,15 @@
 {
   "name": "ng2-cli-test-lib",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Just a test lib to experiment with Angular CLI",
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "author": "Nathan Walker <walkerrunpdx@gmail.com>",
+  "homepage": "https://github.com/NathanWalker/ng2-cli-test-lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
+    "url": "https://github.com/NathanWalker/ng2-cli-test-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
+    "url": "https://github.com/NathanWalker/ng2-cli-test-lib/issues"
   },
   "license": "MIT",
   "main": "",
