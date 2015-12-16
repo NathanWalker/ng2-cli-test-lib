@@ -2,11 +2,11 @@ import {Component, ViewEncapsulation} from 'angular2/core';
 
 import {TestDirective} from './directives/test.directive';
 import {TestPipe} from './pipes/test.pipe';
-import {TestService, TestService2} from './services/test.service';
+import {TestService, TestService2} from './providers/test.provider';
 import {TestStyles} from './test.styles';
 
 @Component({
-  selector: 'app', 
+  selector: 'app',
   directives: [ TestDirective ],
   pipes: [TestPipe],
   encapsulation: ViewEncapsulation.None,
@@ -50,7 +50,7 @@ export class App {
   title: string;
 
   // TypeScript public modifiers
-  constructor(private t1:TestService, private t2:TestService2) {
+  constructor(private t1: TestService, private t2: TestService2) {
     this.title = 'Angular 2';
   }
 

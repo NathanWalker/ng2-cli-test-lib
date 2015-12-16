@@ -16,7 +16,8 @@
         "node_modules",
         "src/public",
         "src/app/app.ts",
-        "src/app/app.spec.ts",
-        "bootstrap.ts"
+        "src/bootstrap.ts",
+        "src/vendor.ts"
     ]
 }
+

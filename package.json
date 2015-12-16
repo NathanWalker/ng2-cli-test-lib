@@ -1,6 +1,6 @@
 {
   "name": "ng2-cli-test-lib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Just a test lib to experiment with Angular CLI",
   "author": "Nathan Walker <walkerrunpdx@gmail.com>",
   "homepage": "https://github.com/NathanWalker/ng2-cli-test-lib",
@@ -15,11 +15,12 @@
   "main": "",
   "typings": "./ng2-cli-test-lib.d.ts",
   "scripts": {
-    "clean": "rimraf node_modules doc && npm cache clean",
+    "clean": "rimraf node_modules doc typings && npm cache clean",
     "clean-install": "npm run clean && npm install",
     "clean-start": "npm run clean && npm start",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
+    "build:prod": "webpack --progress --profile --colors --display-error-details --display-cached --optimize-occurence-order --optimize-minimize --optimize-dedupe",
     "server": "webpack-dev-server --inline --progress --profile --colors --display-error-details --display-cached --port 3000",
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start",
@@ -29,14 +30,17 @@
     "ci": "npm run e2e && npm run test",
     "docs": "typedoc  --options typedoc.json  src/**/*.ts",
     "start": "npm run server",
+    "postinstall": "typings install",
     "prepublish": "tsc"
   },
   "dependencies": {
+    "angular2": "2.0.0-beta.0",
     "core-js": "^1.2.6",
-    "rxjs": "5.0.0-alpha.14",
-    "angular2": "2.0.0-alpha.53",
+    "es6-shim": "^0.33.13",
+    "jquery": "^2.1.4",
     "reflect-metadata": "0.1.2",
-    "zone.js": "0.5.8"
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
     "css-loader": "^0.23.0",
@@ -60,8 +64,11 @@
     "style-loader": "^0.13.0",
     "ts-loader": "^0.7.2",
     "tsconfig-lint": "^0.2.0",
+    "tslint": "^3.2.0",
+    "tslint-loader": "^2.1.0",
     "typedoc": "^0.3.12",
     "typescript": "^1.7.3",
+    "typings": "^0.3.1",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.12.1"

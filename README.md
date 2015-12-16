@@ -13,6 +13,9 @@ npm install ng2-cli-test-lib
 ```bash
 npm install
 
+# install typescript typings
+typings install
+
 # start the server
 npm start 
 ```

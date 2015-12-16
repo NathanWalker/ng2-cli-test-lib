@@ -1,10 +1,10 @@
 import {TestDirective} from './src/app/directives/test.directive';
-import {TestService, TestService2} from './src/app/services/test.service';
+import {TestService, TestService2} from './src/app/providers/test.provider';
 import {TestPipe} from './src/app/pipes/test.pipe';
 import {TestStyles} from './src/app/test.styles';
 
 export * from './src/app/directives/test.directive';
-export * from './src/app/services/test.service';
+export * from './src/app/providers/test.provider';
 export * from './src/app/pipes/test.pipe';
 export * from './src/app/test.styles';
 
