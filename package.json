@@ -1,6 +1,6 @@
 {
   "name": "ng2-cli-test-lib",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Just a test lib to experiment with Angular CLI",
   "author": "Nathan Walker <walkerrunpdx@gmail.com>",
   "homepage": "https://github.com/NathanWalker/ng2-cli-test-lib",
