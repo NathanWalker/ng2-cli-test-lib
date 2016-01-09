@@ -1,76 +1,40 @@
 {
   "name": "ng2-cli-test-lib",
-  "version": "1.0.7",
+  "version": "1.1.0",
+  "license": "MIT",
   "description": "Just a test lib to experiment with Angular CLI",
-  "author": "Nathan Walker <walkerrunpdx@gmail.com>",
-  "homepage": "https://github.com/NathanWalker/ng2-cli-test-lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NathanWalker/ng2-cli-test-lib.git"
+    "url": "git+https://github.com/NathanWalker/ng2-cli-test-lib.git"
   },
-  "bugs": {
-    "url": "https://github.com/NathanWalker/ng2-cli-test-lib/issues"
+  "scripts": {
+    "dev": "tsc --watch",
+    "prepublish": "tsc && tsc -d"
   },
-  "license": "MIT",
+  "author": "Nathan Walker & Jan Kuri",
+  "contributors": [
+    "Nathan Walker <walkerrunpdx@gmail.com>",
+    "Jan Kuri <jkuri88@gmail.com>"
+  ],
   "main": "",
   "typings": "./ng2-cli-test-lib.d.ts",
-  "scripts": {
-    "clean": "rimraf node_modules doc typings && npm cache clean",
-    "clean-install": "npm run clean && npm install",
-    "clean-start": "npm run clean && npm start",
-    "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
-    "build": "webpack --progress --profile --colors --display-error-details --display-cached",
-    "build:prod": "webpack --progress --profile --colors --display-error-details --display-cached --optimize-occurence-order --optimize-minimize --optimize-dedupe",
-    "server": "webpack-dev-server --inline --progress --profile --colors --display-error-details --display-cached --port 3000",
-    "webdriver-update": "webdriver-manager update",
-    "webdriver-start": "webdriver-manager start",
-    "lint": "tsconfig-lint",
-    "e2e": "protractor",
-    "test": "karma start",
-    "ci": "npm run e2e && npm run test",
-    "docs": "typedoc  --options typedoc.json  src/**/*.ts",
-    "start": "npm run server",
-    "postinstall": "typings install",
-    "prepublish": "tsc"
-  },
   "dependencies": {
     "angular2": "2.0.0-beta.0",
-    "core-js": "^1.2.6",
-    "es6-shim": "^0.33.13",
-    "jquery": "^2.1.4",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.4",
     "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "css-loader": "^0.23.0",
-    "exports-loader": "0.6.2",
-    "expose-loader": "^0.7.1",
-    "file-loader": "^0.8.4",
-    "imports-loader": "^0.6.4",
-    "json-loader": "^0.5.3",
-    "karma": "^0.13.11",
+    "angular-cli": "0.0.*",
+    "angular-cli-github-pages": "^0.2.0",
+    "ember-cli-inject-live-reload": "^1.3.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.1",
-    "karma-coverage": "^0.5.2",
     "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "karma-sourcemap-loader": "^0.3.6",
-    "karma-webpack": "1.7.0",
-    "phantomjs": "^1.9.18",
-    "phantomjs-polyfill": "0.0.1",
-    "protractor": "^3.0.0",
-    "raw-loader": "0.5.1",
-    "rimraf": "^2.4.4",
-    "style-loader": "^0.13.0",
-    "ts-loader": "^0.7.2",
-    "tsconfig-lint": "^0.2.0",
-    "tslint": "^3.2.0",
-    "tslint-loader": "^2.1.0",
-    "typedoc": "^0.3.12",
-    "typescript": "^1.7.3",
-    "typings": "^0.3.1",
-    "url-loader": "^0.5.6",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.12.1"
+    "typescript": "^1.7.5"
   }
 }

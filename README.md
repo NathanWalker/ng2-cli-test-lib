@@ -1,36 +1,24 @@
-### This is only a test lib for experimentation with Angular CLI
+## ng2-cli-test-lib
 
-Developing a standard for 3rd party Angular 2 libraries.
+This is just an experimental lib for testing with `angular-cli`.
 
-#### Install
+## Developing
+
+Clone this repository and use regular `angular-cli` commands. For example
 
 ```
-npm install ng2-cli-test-lib
+ng serve
 ```
 
-#### Development
+or 
 
-```bash
-npm install
-
-# install typescript typings
-typings install
-
-# start the server
-npm start 
 ```
-go to [http://localhost:3000](http://localhost:3000) in your browser
-  
-___
+ng build
+```
 
-project setup based on **AngularClass** 
+#### LICENCE
 
-<br><br>
+MIT
 
-[![AngularClass](https://cloud.githubusercontent.com/assets/1016365/9863770/cb0620fc-5af7-11e5-89df-d4b0b2cdfc43.png  "Angular Class")](https://angularclass.com)
-##[AngularClass](https://angularclass.com)
-> Learn AngularJS, Angular 2, and Modern Web Development form the best.
-> Looking for corporate Angular training, want to host us, or Angular consulting? patrick@angularclass.com
+ 
 
-# License
- [MIT](/LICENSE)
