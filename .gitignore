@@ -10,6 +10,7 @@
 
 *.js
 *.d.ts
+*.js.map
 
 # misc
 /.sass-cache

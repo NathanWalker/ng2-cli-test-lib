@@ -6,10 +6,3 @@ export class TestService {
         console.log('test service instantiated!');
     }
 }
-
-@Injectable()
-export class TestService2 {
-    constructor() {
-        console.log('test service 2 instantiated!');
-    }
-}

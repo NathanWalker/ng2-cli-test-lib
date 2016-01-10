@@ -5,3 +5,16 @@
 /.sass-cache
 /connect.lock
 /coverage
+
+# Node generated files
+node_modules
+npm-debug.log
+# OS generated files
+Thumbs.db
+.DS_Store
+
+/src/app.ts
+*.ico
+/src/index.html
+/src/tsconfig.json
+/src/app/ng2-cli-testlib.*
