@@ -16,6 +16,13 @@
 npm-debug.log
 testem.log
 
+# Bundles
+/bundles
+
 *.js
 *.d.ts
 *.js.map
+
+!ember-cli-build.js
+!karma-test-shim.js
+!karma.conf.js
