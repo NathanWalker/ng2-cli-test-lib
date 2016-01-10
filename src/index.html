@@ -4,18 +4,28 @@
   <meta charset="utf-8">
   <title>Ng2CliTestlib</title>
   <base href=".">
+  <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
+  {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <ng2-cli-testlib-app>Loading...</ng2-cli-testlib-app>
+  <app>Loading...</app>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.14/system.js"></script>
-  <script src="https://code.angularjs.org/2.0.0-beta.1/angular2.dev.js"></script>
+  <script src="vendor/systemjs/dist/system.src.js"></script>
+  <script src="vendor/rxjs/bundles/Rx.js"></script>
+  <script src="vendor/angular2/bundles/angular2.dev.js"></script>
+  <script src="vendor/angular2/bundles/http.dev.js"></script>
+  <script src="vendor/angular2/bundles/router.dev.js"></script>
   <script>
     System.config({
-      defaultJSExtensions:true
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
     });
-    System.import('app').then(null, console.error.bind(console));
+    System.import('app.js').then(null, console.error.bind(console));
   </script>
 </body>
 </html>
