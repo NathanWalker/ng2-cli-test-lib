@@ -15,5 +15,5 @@ export default {
   pipes: [TestPipe],
   providers: [TestService, TestService2],
   styles: TestStyles.styles(),
-  styleUrls: ['src/css/test.css']
+  styleUrls: ['src/app/css/test.css']
 }
