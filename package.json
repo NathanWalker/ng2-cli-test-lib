@@ -8,8 +8,9 @@
     "url": "git+https://github.com/NathanWalker/ng2-cli-test-lib.git"
   },
   "scripts": {
+    "build": "ng build",
     "dev": "tsc --watch",
-    "prepublish": "tsc && tsc -d && ng build && node make-packages.js"
+    "prepublish": "tsc && tsc -d && node make-packages.js"
   },
   "author": "Nathan Walker & Jan Kuri",
   "contributors": [
