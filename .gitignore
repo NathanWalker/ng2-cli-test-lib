@@ -26,3 +26,4 @@ testem.log
 !ember-cli-build.js
 !karma-test-shim.js
 !karma.conf.js
+!make-packages.js
