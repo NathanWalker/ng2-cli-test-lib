@@ -1,14 +1,14 @@
-import {TestDirective} from './src/directives/test.directive';
-import {TestService} from './src/providers/test.provider';
-import {TestService2} from './src/providers/test2.provider';
-import {TestPipe} from './src/pipes/test.pipe';
-import {TestStyles} from './src/test.styles';
+import {TestDirective} from './src/app/directives/test.directive';
+import {TestService} from './src/app/providers/test.provider';
+import {TestService2} from './src/app/providers/test2.provider';
+import {TestPipe} from './src/app/pipes/test.pipe';
+import {TestStyles} from './src/app/test.styles';
 
-export * from './src/directives/test.directive';
-export * from './src/providers/test.provider';
-export * from './src/providers/test2.provider';
-export * from './src/pipes/test.pipe';
-export * from './src/test.styles';
+export * from './src/app/directives/test.directive';
+export * from './src/app/providers/test.provider';
+export * from './src/app/providers/test2.provider';
+export * from './src/app/pipes/test.pipe';
+export * from './src/app/test.styles';
 
 export default {
   directives: [TestDirective],

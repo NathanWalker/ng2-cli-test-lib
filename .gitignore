@@ -8,10 +8,6 @@
 /node_modules
 /bower_components
 
-*.js
-*.d.ts
-*.js.map
-
 # misc
 /.sass-cache
 /connect.lock
