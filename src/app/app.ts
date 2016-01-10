@@ -8,7 +8,7 @@ import {TestStyles} from './test.styles';
 
 
 @Component({
-  selector: 'ng2-cli-test-lib-app',
+  selector: 'app',
   providers: [TestService,TestService2],
   templateUrl: 'app/ng2-cli-test-lib.html',
   directives: [TestDirective],
@@ -23,7 +23,7 @@ import {TestStyles} from './test.styles';
     }
   `].concat(TestStyles.styles()),
   styleUrls: [
-    '../css/test.css'
+    'app/css/test.css'
   ],
   template: `
   <header>
@@ -42,7 +42,7 @@ import {TestStyles} from './test.styles';
   </footer>
   `
 })
-export class Ng2CliTestLibApp {
+export class App {
   title: string;
 
   constructor(private t1: TestService, private t2: TestService2) {

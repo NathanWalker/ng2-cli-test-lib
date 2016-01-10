@@ -2,7 +2,7 @@
 import {Directive, ElementRef} from 'angular2/core';
 
 @Directive({
-  selector: '[test]'
+  selector: 'test'
 })
 export class TestDirective {
 

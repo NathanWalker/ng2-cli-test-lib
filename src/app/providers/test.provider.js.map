@@ -1,1 +1,0 @@
-{"version":3,"file":"test.provider.js","sourceRoot":"/","sources":["src/app/providers/test.provider.ts"],"names":["TestService","TestService.constructor"],"mappings":";;;;;;;;;;;;;;;;;;YAEA;gBAEIA;oBACIC,OAAOA,CAACA,GAAGA,CAACA,4BAA4BA,CAACA,CAACA;gBAC9CA,CAACA;gBAJLD;oBAACA,iBAAUA,EAAEA;;gCAKZA;gBAADA,kBAACA;YAADA,CAACA,AALD,IAKC;YALD,qCAKC,CAAA"}

@@ -13,8 +13,8 @@ npm-debug.log
 Thumbs.db
 .DS_Store
 
-/src/app.ts
+/src/bootstrap.ts
 *.ico
 /src/index.html
 /src/tsconfig.json
-/src/app/ng2-cli-testlib.*
+/src/app/app.*
