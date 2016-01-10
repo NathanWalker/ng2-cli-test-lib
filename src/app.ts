@@ -38,7 +38,7 @@ import {TestStyles} from './test.styles';
     <test></test>
   </main>
   <footer>
-    WebPack Angular 2 Starter by <a href="https://twitter.com/AngularClass">@AngularClass</a>
+    This is just an experimental lib for testing with <a href="https://github.com/angular/angular-cli">angular-cli</a>.
   </footer>
   `
 })
